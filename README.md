@@ -1,4 +1,4 @@
-# csn-predictivemaintenanceiot-ttm-html-23
+# csn-predictivemaintenanceiot-ttm-html
 ## 📋 Hướng dẫn Đánh giá Code Tự động cho Sinh viên
 
 ### 🎯 Mục tiêu

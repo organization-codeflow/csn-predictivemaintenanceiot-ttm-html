@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự Án HTML Đơn Giản</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>My Website</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#services">Dịch Vụ</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+            <div class="theme-toggle" onclick="toggleTheme()" title="Chuyển đổi chế độ tối/sáng">
+                <div class="toggle-icon">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Chào Mừng Đến Với Website Của Tôi</h2>
+                <p>Đây là một dự án HTML đơn giản với thiết kế hiện đại và thân thiện với người dùng.</p>
+                <button class="cta-button" onclick="showMessage()">Bắt Đầu Ngay</button>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Giới Thiệu</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Chúng tôi là một đội ngũ chuyên nghiệp, tận tâm với việc tạo ra những sản phẩm chất lượng cao. Với nhiều năm kinh nghiệm trong lĩnh vực công nghệ, chúng tôi luôn nỗ lực mang đến những giải pháp tốt nhất cho khách hàng.</p>
+                        <p>Sứ mệnh của chúng tôi là làm cho công nghệ trở nên đơn giản và dễ tiếp cận với mọi người.</p>
+                    </div>
+                    <div class="about-image">
+                        <div class="placeholder-image">
+                            <span>Hình Ảnh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Dịch Vụ Của Chúng Tôi</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>Thiết Kế Web</h3>
+                        <p>Tạo ra những website đẹp mắt và chuyên nghiệp phù hợp với nhu cầu của bạn.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Ứng Dụng Di Động</h3>
+                        <p>Phát triển ứng dụng di động hiện đại cho cả iOS và Android.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛠️</div>
+                        <h3>Bảo Trì & Hỗ Trợ</h3>
+                        <p>Dịch vụ bảo trì và hỗ trợ kỹ thuật 24/7 cho tất cả sản phẩm.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Liên Hệ Với Chúng Tôi</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>📧 Email:</strong>
+                            <span>contact@mywebsite.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📞 Điện Thoại:</strong>
+                            <span>+84 123 456 789</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📍 Địa Chỉ:</strong>
+                            <span>123 Đường ABC, Quận XYZ, TP.HCM</span>
+                        </div>
+                    </div>
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Tên của bạn:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tin nhắn:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Gửi Tin Nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Website. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
